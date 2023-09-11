@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>My Website</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Share+Tech&subset=latin,latin-ext"
+			rel="stylesheet"
+			type="text/css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+		/>
+	</head>
+
+	<body data-spy="scroll" data-target="#side-nav">
+		<div class="container">
+			<div class="row">
+				<div id="side-nav">
+					<ul class="nav nav-list affix">
+						<li>
+							<a href="#start">Home<br /><sub>vertical height</sub></a>
+						</li>
+						<li><a href="#one">N&deg;1</a></li>
+						<li><a href="#two">N&deg;2</a></li>
+						<li><a href="#three">N&deg;3</a></li>
+					</ul>
+				</div>
+				<div class="col-md-offset-3 col-md-11 content">
+					<div id="start" class="h1-wrap">
+						<h1 class="shareTech">Sheen Macchiatos</h1>
+						<div class="puppyWrap">
+							<div class="puppyCover opacity"></div>
+							<img class="topImage" src="PICSA/1.png" />
+						</div>
+					</div>
+					<section id="one">
+						<h2 class="shareTech">Section 1</h2>
+						<p>
+							Scroll spy is very fun but pretty tricky when it's activated by
+							id's with elements of varying heights.
+						</p>
+					</section>
+					<section id="two">
+						<h2 class="shareTech">Section 2</h2>
+						<p>
+							<strong>Note:</strong> If the nav list is of a certain height and
+							is the trigger element well - you could run into problems when
+							consider spy activation.
+						</p>
+					</section>
+					<section id="three">
+						<h2 class="shareTech">Section 3</h2>
+						<p>
+							If you're rendering trigger id elements dynamically it's best to
+							make sure that you're setting the height of the element as well;
+							particularly if the element height is small.
+						</p>
+					</section>
+					<sub
+						>Disclaimer: this is mainly an issue for desktop viewing so this
+						example will not depercate nicely. You're welcome. ;) The background
+						image is from
+						<a href="http://www.drawing-factory.com/">The Drawing Factory</a
+						>.</sub
+					>
+				</div>
+			</div>
+		</div>
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
