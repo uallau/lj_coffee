@@ -14,7 +14,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	color: white;
+	color: #211717;
 	font-family: "Crimson Text", serif;
 	letter-spacing: 2px;
 	position: relative;
@@ -24,6 +24,10 @@ html {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+.navbar {
+	background-color: red;
 }
 
 ::-webkit-scrollbar {
@@ -37,7 +41,7 @@ html {
 }
 
 #home {
-	background-color: #eee;
+	background-color: #2b2929;
 	color: #191919;
 	padding-top: 80px;
 }
@@ -102,12 +106,31 @@ footer .fa:hover {
 	font-size: 8.75vw;
 }
 
-main,
-article {
-	background: #fff;
+main {
+	background: #211717;
 	position: relative;
-	border: 1px solid #fff;
 	font-family: "IM Fell French Canon Pro";
+	color: whitesmoke;
+	font-size: 1.4rem;
+	padding: 2rem 25%;
+	line-height: 1.6;
+}
+
+.section-add-cart {
+	background: #211717;
+	position: relative;
+	font-family: "IM Fell French Canon Pro";
+	color: whitesmoke;
+	font-size: 1.4rem;
+	padding: 2rem 25%;
+	line-height: 1.6;
+}
+
+#portfolio {
+	background: #706060;
+	position: relative;
+	font-family: "IM Fell French Canon Pro";
+	color: whitesmoke;
 	font-size: 1.4rem;
 	padding: 2rem 25%;
 	line-height: 1.6;
@@ -234,7 +257,12 @@ article {
 .service1,
 .service2,
 .service3 {
-	height: 60vh;
+	height: 100%;
+	background-color: #2b2929;
 }
 
 /* Add Cart */
+
+.product {
+	background-color: #191919;
+}
