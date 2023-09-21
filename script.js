@@ -5,6 +5,7 @@ const cartDOM = document.querySelector(".cart");
 const addToCartBtnsDOM = document.querySelectorAll(
 	'[data-action="ADD_TO_CART"]'
 );
+
 // checking the cart
 if (cart.length > 0) {
 	cart.forEach((product) => {
@@ -20,6 +21,7 @@ if (cart.length > 0) {
 		});
 	});
 }
+
 // interaction to the DOM
 addToCartBtnsDOM.forEach((addToCartBtnDOM) => {
 	addToCartBtnDOM.addEventListener("click", (_) => {
@@ -41,6 +43,7 @@ addToCartBtnsDOM.forEach((addToCartBtnDOM) => {
 		}
 	});
 });
+
 // injecting html tags into the DOM
 function insertElementsInDOM(product) {
 	cartDOM.insertAdjacentHTML(
@@ -210,4 +213,37 @@ $("body").scrollspy({
 // Closes the Responsive Menu on Menu Item Click
 $(".navbar-collapse ul li a").click(function () {
 	$(".navbar-toggle:visible").click();
+});
+
+//
+var swiper = new Swiper(".mySwiper", {
+	effect: "coverflow",
+	grabCursor: true,
+	centeredSlides: true,
+	loop: true,
+	slidesPerView: "1",
+	coverflowEffect: {
+		rotate: 0,
+		stretch: 0,
+		depth: 100,
+		modifier: 4,
+		slideShadows: false,
+	},
+	keyboard: {
+		enabled: true,
+	},
+	mousewheel: {
+		thresholdDelta: 70,
+	},
+	initialSlide: 0,
+	on: {
+		click(event) {
+			swiper.slideTo(this.clickedIndex);
+		},
+	},
+	breakpoints: {
+		640: {
+			slidesPerView: 2,
+		},
+	},
 });
