@@ -3,84 +3,228 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>My Website</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+		<title>LJ Coffee</title>
+        <link rel="stylesheet" href="style.css">
 
-		<link
-			href="https://fonts.googleapis.com/css?family=Share+Tech&subset=latin,latin-ext"
-			rel="stylesheet"
-			type="text/css"
-		/>
-
-		<link
-			rel="stylesheet"
-			href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
-		/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 	</head>
 
-	<body data-spy="scroll" data-target="#side-nav">
-		<div class="container">
-			<div class="row">
-				<div id="side-nav">
-					<ul class="nav nav-list affix">
-						<li>
-							<a href="#start">Home<br /><sub>vertical height</sub></a>
-						</li>
-						<li><a href="#one">N&deg;1</a></li>
-						<li><a href="#two">N&deg;2</a></li>
-						<li><a href="#three">N&deg;3</a></li>
-					</ul>
-				</div>
-				<div class="col-md-offset-3 col-md-11 content">
-					<div id="start" class="h1-wrap">
-						<h1 class="shareTech">Sheen Macchiatos</h1>
-						<div class="puppyWrap">
-							<div class="puppyCover opacity"></div>
-							<img class="topImage" src="PICSA/1.png" />
-						</div>
-					</div>
-					<section id="one">
-						<h2 class="shareTech">Section 1</h2>
-						<p>
-							Scroll spy is very fun but pretty tricky when it's activated by
-							id's with elements of varying heights.
-						</p>
-					</section>
-					<section id="two">
-						<h2 class="shareTech">Section 2</h2>
-						<p>
-							<strong>Note:</strong> If the nav list is of a certain height and
-							is the trigger element well - you could run into problems when
-							consider spy activation.
-						</p>
-					</section>
-					<section id="three">
-						<h2 class="shareTech">Section 3</h2>
-						<p>
-							If you're rendering trigger id elements dynamically it's best to
-							make sure that you're setting the height of the element as well;
-							particularly if the element height is small.
-						</p>
-					</section>
-					<sub
-						>Disclaimer: this is mainly an issue for desktop viewing so this
-						example will not depercate nicely. You're welcome. ;) The background
-						image is from
-						<a href="http://www.drawing-factory.com/">The Drawing Factory</a
-						>.</sub
-					>
-				</div>
-			</div>
-		</div>
+	<body data-spy="scroll" data-target="#pillz" data-offset="20">
 
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	</body>
+        <header id="page-top">
+             <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-fixed-top navbar-shrink"  >
+                <div class="container">
+                
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="#page-top">Butuan’s First 29ers Macchiato Coffee</a>
+                    </div>
+
+              
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden active">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="">
+                            <a class="page-scroll" href="#services">Services</a>
+                        </li>
+                        <li class="">
+                            <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="">
+                            <a class="page-scroll" href="#menu">Menu</a>
+                        </li>
+                        
+                        <li class="">
+                            <a class="page-scroll" href="#contact-us">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        </header>
+
+        <div class="banner">
+            <h1>Sumasarap pag ikaw ang KAPEling...</h1>
+            <img src="PICSA/bg5.png">
+        </div>
+
+        <main>
+            <!-- Services Section -->
+            <section id="services">
+                <p class="our-serives">Our Services</p>
+                <p class="section-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="services-grid">
+                    <div class="service-box service1">
+                        <i class="ti-bar-chart"></i>
+                        <h4 class="services-h4">Multi-Cuisine Offerings</h4>
+                        <p class="services-p">Coffee shops are renowned for their multi-cuisine nature, which allows them to incorporate a variety of international dishes. The foods are served nutritious, delicious, and colorful.</p>
+                        <a href="#" class="cta">Read More <span class="ti-angle-right"></a>
+                    </div>
+          
+                    <div class="service-box service2">
+                        <i class="ti-light-bulb"></i>
+                        <h4 class="services-h4">24/7 Service</h4>
+                        <p class="services-p">One of the defining characteristics of a coffee shop is its round-the-clock service. Open 24/7, these establishments provide an A la Carte menu as well as an elaborate buffet for breakfast, lunch, and dinner.</p>
+                        <a href="#" class="cta">Read More <span class="ti-angle-right"></a>
+                    </div>
+          
+                    <div class="service-box service3">
+                        <i class="ti-money"></i>
+                        <h4 class="services-h4">Extensive Staffing and Service</h4>
+                        <p class="services-p">A Coffee shop requires elaborate service, attention to detail, and fine-dining table layout. The staffing are extensively extensive due to the non-stop operations.</p>
+                        <a href="#" class="cta">Read more <span class="ti-angle-right"></span></a>
+                    </div>
+                </div>
+            </section>
+            <!-- Services End -->
+        </main>
+
+        
+            <!-- Portfolio -->
+            <section id="portfolio">
+                <p class="gallery-title">Pandesal Symphony: Melody of Flavors</p>
+				<!-- Swiper -->
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./PICSA/blueberry-pandesal.png" alt="Blueberry White Cheese" />
+                            <div>
+                            <h2>Blueberry White Cheese</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./PICSA/coconutella.png" alt="Coconutella" />
+                            <div>
+                            <h2>Coconutella</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./PICSA/espanyamacapuno-pandesal.png" alt="Espanya with Macapuno" />
+                            <div>
+                            <h2>Espanya with Macapuno</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./PICSA/espanyamacapuno-pandesal.png" alt="Peanutella" />
+                            <div>
+                            <h2>Peanutella</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./PICSA/strawberrycheese-pandesal.png" alt="Strawberry White Cheese" />
+                            <div>
+                            <h2>Strawberry White Cheese</h2>
+                            </div>
+                        </div>
+					</div>
+				</div>
+            </section>
+            <!-- Portfolio End-->
+      
+        
+            <!-- Add Cart -->
+            <section class="section-add-cart" id="menu">
+              <h2 class="text-center section-add-car-h2">Products</h2>
+              <div class="products">
+                <div class="product">
+                  <img class="product__image" src="PICSA/1.png" alt="Iced Caramel Macchiato">
+                  <h2 class="product__name">Iced Caramel Macchiato</h2>
+                  <h3 class="product__price">29.00</h3>
+                  <button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+                <div class="product">
+                  <img class="product__image" src="PICSA/2.png" alt="Energy Drink">
+                  <h2 class="product__name">Energy Drink</h2>
+                  <h3 class="product__price">29.00</h3>
+                  <button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+                <div class="product">
+                  <img class="product__image" src="./PICSA/honey_macchiato.png" alt="Honey Macchiato">
+                  <h2 class="product__name">Honey Macchiato</h2>
+                  <h3 class="product__price">29.00</h3>
+                  <button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+                <div class="product">
+                  <img class="product__image" src="./PICSA/spanish_macchiato.png" alt="Spanish Macchiato">
+                  <h2 class="product__name">Spanish Macchiato</h2>
+                  <h3 class="product__price">29.00</h3>
+                  <button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+                <div class="product">
+                  <img class="product__image" src="./PICSA/french_vanilla_macchiato.png" alt="French Vanilla Macchiato">
+                  <h2 class="product__name">French Vanilla Macchiato</h2>
+                  <h3 class="product__price">29.00</h3>
+                  <button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+                <div class="product">
+                  <img class="product__image" src="./PICSA/australian-chocolate.png" alt="Australian Chocolate">
+                  <h2 class="product__name">Australian Chocolate</h2>
+                  <h3 class="product__price">29.00</h3>
+                  <button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+                </div>
+              </div>  
+              
+              <section class="section">
+                <h2 class="text-center">Cart</h2>
+                <div class="cart"></div>
+              </section>
+            </section>
+          
+          
+            <!-- Add Cart End -->
+
+            <section id="contact-us">
+                <p class="contact-title">Contact Us</p>
+                <p class="contact-text" style="color: grey;">"Sip and share your thoughts with us! Reach out anytime to discuss coffee, questions, or just to say hello."</p>
+                <div class="grid-container">
+                    <div class="grid-item"><i class="material-symbols-sharp" style="font-size:62px">
+                        distance
+                    </i> <br> <p class="grid-item-title">ADDRESS</p>
+                    San Vicente, Butuan City</div>
+                    <div class="grid-item"><i class="material-symbols-sharp" style="font-size:62px">
+                        phonelink_ring
+                    </i> <br> <p class="grid-item-title">PHONE</p>
+                    +63 946 538 4480</div>
+                    <div class="grid-item"><i class="material-symbols-sharp" style="font-size:62px">
+                        description
+                    </i> <br> <p class="grid-item-title">EMAIL</p>
+                   ssheen906@gmail.com</div>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <div class="row text-center footer-icons">
+                    <a href="https://www.facebook.com/crlgpyo"><i class="fa fa-facebook-square" style="font-size:48px"></i></a>
+                    <a href="tel:+1-954-850-4276"><i class="fa fa-phone-square" style="font-size:48px" aria-hidden="true"></i></i></a>
+                    <a href="mailto:aundreydrummond@live.com"><i class="fa fa-envelope-square" aria-hidden="true" style="font-size:48px"></i></a>
+                </div>
+            </footer>
+
+            <!-- scripts -->
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.7/angular.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+            <script src="script2.js"></script>
+            <script src="script.js"></script>
+    </body>
 </html>
