@@ -215,7 +215,7 @@ main {
 	text-align: center;
 	font-size: 45px;
 	font-weight: 800;
-	font-family: "Montserrat";
+	font-family: "Noticia Text";
 	background: -webkit-linear-gradient(#fcedd7, #f8c4a8, #f3a796);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -303,6 +303,101 @@ main {
 	.swiper-slide h2 {
 		font-size: 2rem;
 	}
+}
+
+/* Portfolio Text Grids */
+
+.gridcontainer {
+	display: grid;
+	margin: auto;
+	justify-content: center;
+	grid-template-rows: auto;
+	grid-template-columns: 25% repeat(3, 1fr 12.5925%) 1fr 25%;
+
+	font-family: "lato", helvetica, arial;
+	line-height: 1.5;
+	font-family: "EB Garamond", serif;
+}
+
+[class^="griditem"] {
+}
+
+.griditem1 {
+	grid-column: 2 / 9;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	color: #252424;
+}
+
+#responsive_headline {
+	font-size: 60px !important;
+}
+
+.griditem1 .subtitle {
+	font-size: 22px;
+}
+
+.griditem1 h2 {
+	margin: 0 auto;
+	padding: 0;
+	font-family: helvetica;
+	font-size: 32px;
+}
+
+.griditem1 hr {
+	margin: 0;
+	padding: 0;
+}
+
+.subtitle {
+	font-size: 1.3rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-style: italic;
+	font-weight: 400;
+	text-align: center;
+}
+
+.griditem2 {
+	grid-column: 1 / 2;
+}
+
+.griditem3 {
+	grid-column: 9;
+}
+
+.griditem2 p,
+.griditem3 p {
+	text-align: justify;
+}
+
+.griditem4 {
+	grid-column: 3 / 8;
+	grid-row: 2;
+}
+
+.griditem5 {
+	grid-column: 1 / -1;
+	background-color: #0f0f0f;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.griditem5 p {
+	margin: auto;
+	padding-top: 3%;
+	padding-bottom: 5%;
+	text-align: center;
+}
+
+.aside,
+.aside p {
+	color: #f1bfbc;
+	font-size: 16px;
+	text-align: justify;
 }
 
 /* ----------------- Products/ Menu ----------------- */
